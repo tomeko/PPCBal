@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+	
+	 <LinearLayout 
+        android:id="@+id/buttons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+		android:layout_alignParentBottom="true"
+         >   
+     
+    <Button android:id="@+id/btnupdate"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="Get Balance!"
+		android:layout_weight="50"
+		 />   
+	
+	<Button android:id="@+id/btnexit"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="Exit"
+		android:layout_weight="50"
+		/>
+		   
+	</LinearLayout>
+	
+	<RelativeLayout 
+        android:id="@+id/loginstuff"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+         android:layout_above="@id/buttons"
+         >    
+		<TextView  
+	    	android:id="@+id/lbllog"
+	    	android:layout_width="fill_parent" 
+	    	android:layout_height="wrap_content" 
+	    	android:text="Login:"
+	    	
+	    	 />
+	    
+	    <EditText 
+	    	android:id="@+id/log"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/lbllog" 
+			 />
+			
+		<TextView  
+	    	android:id="@+id/lblpass"
+	    	android:layout_width="fill_parent" 
+	    	android:layout_height="wrap_content" 
+	    	android:text="Password:"
+	    	android:layout_below="@id/log" 
+	    	 />
+	    	 
+	    
+	    <EditText android:id="@+id/pass"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/lblpass"
+			android:password="true" 
+			/> 
+	
+		<CheckBox android:id="@+id/remember"
+		
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remeber Login/Password" 
+        android:layout_below="@id/pass" 
+        />
+    
+   
+	</RelativeLayout>
+	
+	
+</RelativeLayout>
